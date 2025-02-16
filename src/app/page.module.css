@@ -1,0 +1,25 @@
+/* src/styles/page.module.css */
+
+.container {
+  display: flex;
+  width: 100vw; /* Takes full width */
+  height: 100vh; /* Takes full viewport height */
+}
+
+.sidebar {
+  width: 300px; /* Sidebar width */
+  height: 100vh;
+  flex-shrink: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.mainContent {
+  flex-grow: 1; /* Takes remaining space */
+  margin-left: 300px; /* Offsets sidebar width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

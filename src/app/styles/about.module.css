@@ -1,0 +1,45 @@
+/* src/styles/about.module.css */
+
+.aboutContainer {
+    flex-grow: 1; /* Expands to fill remaining space */
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    min-height: 100vh; /* Ensures full height */
+    width: calc(100% - 300px); /* Fills remaining space next to sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px; /* Matches sidebar width */
+    padding: 40px 20px; /* Adjusted padding */
+  }
+  
+  /* Responsive Fix for Smaller Screens */
+  @media (max-width: 768px) {
+    .aboutContainer {
+      width: 100%;
+      margin-left: 0; /* No sidebar on small screens */
+    }
+  }
+  
+  .skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skillCard {
+    padding: 12px 24px;
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skillCard:hover {
+    transform: scale(1.1);
+  }
+  
